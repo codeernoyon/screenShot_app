@@ -1,0 +1,187 @@
+.sideBer {
+    width: 30%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 01rem 0.5rem 1rem 0.5rem;
+    border: 1px solid rgba(245, 238, 238, 0.151);
+    .top {
+        padding-bottom: 2rem;
+        position: relative;
+        box-sizing: border-box;
+        .ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                width: 70px;
+            }
+            .searchArea {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                #searchInput {
+                    padding: 0.8rem 2rem;
+                    border-radius: 5px 0 0 5px;
+                    background: linear-gradient(90deg, rgb(73, 0, 133) 0%, rgba(64, 0, 153, 1) 100%);
+                }
+                .icon {
+                    padding: 0.53rem 1rem;
+                    background: linear-gradient(90deg, rgb(73, 0, 133) 0%, rgba(64, 0, 153, 1) 100%);
+                    font-size: 1.2rem;
+                    border-radius: 0 5px 5px 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .design_plate {
+        .edit_btn {
+            width: 10rem;
+            display: grid;
+            place-items: center;
+            margin: 1rem 0;
+            display: none;
+            .editBtn {
+                padding: 0.8rem 3rem;
+                background: linear-gradient(200deg, rgba(61, 4, 145, 1) 0%, rgb(80, 4, 131) 100%);
+                border-radius: 8px;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+        .inputs_functionality {
+            position: relative;
+            padding: 2rem;
+            color: #ffffffe0;
+            .inputs_functionality_value {
+                margin: 2.5rem 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                input[type='range'] {
+                    -webkit-appearance: none;
+                    width: 70%;
+                    height: 4px;
+                    background: #ffffff3f;
+                    border-radius: 15px;
+                }
+                input[type='range']::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    height: 0.5rem;
+                    width: 0.5rem;
+                    border-radius: 20px;
+                    background: #ffffff3f;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                }
+                input[type='range']:focus {
+                    outline: block;
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.164);
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 1px;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.164);
+            }
+        }
+        .backgrounds {
+            padding: 1rem;
+            padding-bottom: 2rem;
+            position: relative;
+            .backgrounds_warper {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                .backgrounds_colors_ul {
+                    padding-top: 1rem;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    .backgrounds_colors_li {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        margin: 0.5rem;
+                        &:nth-child(1) {
+                            background: var(--bg-clr-first);
+                        }
+                        &:nth-child(2) {
+                            background: var(--bg-clr-second);
+                        }
+                        &:nth-child(3) {
+                            background: var(--bg-clr-third);
+                        }
+                        &:nth-child(4) {
+                            background: var(--bg-clr-fourth);
+                        }
+                        &:nth-child(5) {
+                            background: var(--bg-clr-five);
+                        }
+                        &:nth-child(6) {
+                            background: var(--bg-clr-six);
+                        }
+                        &:nth-child(7) {
+                            background: var(--bg-clr-seven);
+                        }
+                        &:nth-child(8) {
+                            background: var(--bg-clr-eight);
+                        }
+                        &:nth-child(9) {
+                            background: var(--bg-clr-nine);
+                        }
+                        &:nth-child(10) {
+                            background: var(--bg-clr-ten);
+                        }
+                        &:nth-child(11) {
+                            background: var(--bg-clr-eleven);
+                        }
+                        &:nth-child(12) {
+                            background: var(--bg-clr-twelve);
+                        }
+                    }
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.164);
+            }
+        }
+        .download_btn {
+            width: 10rem;
+            display: grid;
+            place-items: center;
+            margin: 1.5rem 1rem;
+            cursor: pointer;
+            .downloadBtn {
+                padding: 0.8rem 3rem;
+                background: linear-gradient(200deg, rgba(61, 4, 145, 1) 0%, rgb(80, 4, 131) 100%);
+                border-radius: 8px;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

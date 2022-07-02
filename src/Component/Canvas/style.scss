@@ -1,0 +1,60 @@
+.canvas {
+    min-height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    .canvas_title {
+        margin: 0.5rem 0;
+        font-weight: 500;
+    }
+    .canvas_warper {
+        min-height: 95%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        .image_warper {
+            position: relative;
+            height: 98%;
+            width: 900px;
+            display: grid;
+            place-items: center;
+            padding: 3rem 0;
+            overflow: hidden;
+            border-radius: 10px;
+            background: var(--bg-color);
+            .img {
+                height: 100%;
+                width: 100%;
+                z-index: 99;
+                object-fit: cover;
+                display: grid;
+                place-items: center;
+                .img_warper {
+                    height: auto;
+                    width: 85%;
+                    perspective: 2000px;
+                    .canvas_img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transform-origin: center;
+                        transition: 0.25s all linear;
+                    }
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(100, 100, 100, 0.299);
+                backdrop-filter: blur(10px);
+            }
+        }
+    }
+}

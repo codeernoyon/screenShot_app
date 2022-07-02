@@ -1,13 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --bg-color: linear-gradient(90deg, rgb(153, 11, 182) 0%, rgba(64, 0, 153, 1) 100%);
+    --bg-clr-first: linear-gradient(90deg, rgb(153, 11, 182) 0%, rgba(64, 0, 153, 1) 100%);
+    --bg-clr-second: linear-gradient(90deg, rgba(189, 4, 219, 1) 0%, rgba(32, 6, 68, 1) 100%);
+    --bg-clr-third: linear-gradient(90deg, rgba(206, 4, 219, 1) 0%, rgba(5, 250, 222, 1) 100%);
+    --bg-clr-fourth: linear-gradient(90deg, rgba(202, 4, 219, 1) 0%, rgba(5, 162, 250, 1) 100%);
+    --bg-clr-five: linear-gradient(90deg, rgba(4, 167, 219, 1) 0%, rgba(4, 81, 255, 1) 100%);
+    --bg-clr-six: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    --bg-clr-seven: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    --bg-clr-eight: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(96, 29, 253, 1) 50%, rgba(247, 69, 252, 1) 100%);
+    --bg-clr-nine: radial-gradient(circle, rgba(230, 174, 238, 1) 0%, rgba(156, 148, 233, 1) 100%);
+    --bg-clr-ten: radial-gradient(circle, rgba(134, 4, 148, 1) 0%, rgba(116, 42, 207, 1) 100%);
+    --bg-clr-eleven: radial-gradient(circle, rgba(22, 3, 115, 1) 0%, rgba(152, 42, 207, 1) 100%);
+    --bg-clr-twelve: radial-gradient(circle, rgba(172, 12, 235, 1) 0%, rgba(54, 1, 145, 1) 100%);
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Raleway', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+li {
+    list-style: none;
+    color: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: inherit;
 }
